@@ -1,3 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立屏東科技大學 - 工業管理系 | NPUST IEM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .iem-blue { color: #003366; }
+        .bg-iem-blue { background-color: #003366; }
+        .bg-iem-gold { background-color: #f1c40f; }
+        .hero-pattern {
+            background-color: #003366;
+            background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #f1c40f;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- 頂部資訊列 -->
+    <div class="bg-iem-blue text-white py-2 text-sm">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex space-x-4">
+                <span class="flex items-center"><i data-lucide="phone" class="w-3 h-3 mr-2"></i> (08) 770-3202</span>
+                <span class="hidden md:flex items-center"><i data-lucide="mail" class="w-3 h-3 mr-2"></i> iem@mail.npust.edu.tw</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-iem-gold transition">屏科大首頁</a>
+                <a href="#" class="hover:text-iem-gold transition">English</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主導航欄 -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="bg-iem-blue p-2 rounded-lg mr-3">
+                        <i data-lucide="graduation-cap" class="text-white w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-black text-xl iem-blue tracking-tight">屏東科技大學</h1>
+                        <h2 class="font-bold text-sm text-gray-500 uppercase tracking-widest">工業管理系</h2>
+                    </div>
+                </div>
+                <div class="hidden lg:flex space-x-8 font-bold text-gray-700">
+                    <a href="#" class="nav-link text-iem-blue">本系概況</a>
+                    <a href="#" class="nav-link">師資陣容</a>
+                    <a href="#" class="nav-link">課程規劃</a>
+                    <a href="#" class="nav-link">招生資訊</a>
+                    <a href="#" class="nav-link">學術研究</a>
+                    <a href="#students" class="bg-iem-gold text-iem-blue px-4 py-1 rounded-full hover:bg-yellow-500 transition">學生風采</a>
+                </div>
+                <button class="lg:hidden p-2 text-gray-600">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄視覺區 -->
+    <section class="hero-pattern py-20 md:py-32 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="inline-block px-4 py-1 bg-iem-gold text-iem-blue font-black rounded-md text-sm uppercase">
+                        智慧製造 • 數位轉型
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black leading-tight">
+                        培育具備科技實力與<br><span class="text-iem-gold">管理智慧</span>的領袖
+                    </h2>
+                    <p class="text-lg text-gray-300 max-w-lg leading-relaxed">
+                        屏科大工管系致力於結合工業工程理論與實務應用，從大數據分析、智慧生產到供應鏈管理，我們為未來的產業醫師提供最好的養分。
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-iem-gold text-iem-blue px-8 py-4 rounded-lg font-black hover:bg-yellow-500 transition shadow-xl">
+                            系所簡介
+                        </button>
+                        <button class="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-black hover:bg-white/10 transition">
+                            虛擬環景導覽
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-iem-gold/20 blur-3xl rounded-full"></div>
+                        <!-- 示意圖：工業管理場景 -->
+                        <div class="relative bg-white/10 backdrop-blur-md p-2 rounded-2xl border border-white/20">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="[屏科大工管系研究室]" class="rounded-xl shadow-2xl">
+                            <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-2xl text-iem-blue">
+                                <p class="text-3xl font-black">40+</p>
+                                <p class="text-xs font-bold text-gray-500 uppercase">產學合作夥伴</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新公告 -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h3 class="text-3xl font-black iem-blue">最新公告</h3>
+                    <p class="text-gray-500 mt-2 font-medium">掌握系上第一手學術與活動動態</p>
+                </div>
+                <a href="#" class="text-iem-blue font-bold flex items-center hover:underline">
+                    查看全部 <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 公告 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <span class="text-xs font-bold text-gray-400">2024.11.20</span>
+                    <h4 class="text-xl font-bold mt-2 iem-blue hover:text-blue-700 cursor-pointer">【招生】114學年度碩士班甄試入學面試公告</h4>
+                    <p class="text-gray-600 mt-3 line-clamp-2">請通過第一階段篩選之考生，於指定時間內完成報到...</p>
+                    <div class="mt-4 flex items-center text-sm font-bold text-blue-500">
+                        <i data-lucide="tag" class="w-4 h-4 mr-2"></i> 招生資訊
+                    </div>
+                </div>
+                <!-- 公告 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <span class="text-xs font-bold text-gray-400">2024.11.15</span>
+                    <h4 class="text-xl font-bold mt-2 iem-blue hover:text-blue-700 cursor-pointer">【演講】智慧物流的未來：無人載具與路徑優化</h4>
+                    <p class="text-gray-600 mt-3 line-clamp-2">特別邀請業界專家分享最新的自動化倉儲技術與案例...</p>
+                    <div class="mt-4 flex items-center text-sm font-bold text-emerald-500">
+                        <i data-lucide="mic" class="w-4 h-4 mr-2"></i> 學術演講
+                    </div>
+                </div>
+                <!-- 公告 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <span class="text-xs font-bold text-gray-400">2024.11.05</span>
+                    <h4 class="text-xl font-bold mt-2 iem-blue hover:text-blue-700 cursor-pointer">【獎學金】113-1學年度工管系優秀學生獎助學金</h4>
+                    <p class="text-gray-600 mt-3 line-clamp-2">鼓勵學業成績優異或參與競賽表現傑出之同學申請...</p>
+                    <div class="mt-4 flex items-center text-sm font-bold text-amber-500">
+                        <i data-lucide="award" class="w-4 h-4 mr-2"></i> 獎助學金
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 重點亮點：學生傑出表現（您的個人網頁連結點） -->
+    <section id="students" class="py-24 bg-iem-blue text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-black mb-4">學生傑出表現</h3>
+                <div class="w-24 h-1 bg-iem-gold mx-auto rounded-full"></div>
+                <p class="mt-6 text-gray-300 text-lg">在屏科大工管，我們鼓勵學生建立個人品牌，展示實務專案與學習成果</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- 您的展示卡片 -->
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all transform hover:-translate-y-2 group">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 rounded-full bg-iem-gold flex items-center justify-center font-black text-iem-blue text-xl">
+                            戴
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold">戴嘉樟</h4>
+                            <p class="text-sm text-gray-400">大學部 | 優秀學生</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        「專精於工作研究與生產效率優化，致力於將工業工程技術應用於實務生產線。具備多項專業證照與專案開發經驗。」
+                    </p>
+                    <!-- 這是連結到您 index.html 的關鍵按鈕 -->
+                    <a href="index.html" target="_blank" class="flex items-center justify-center w-full py-3 bg-white text-iem-blue font-black rounded-xl hover:bg-iem-gold hover:scale-105 transition-all">
+                        查看個人作品集 <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- 預留位置 2 -->
+                <div class="bg-white/5 rounded-3xl p-8 border border-white/10 opacity-60">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gray-600 flex items-center justify-center font-black text-white text-xl">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold">學術精英 A</h4>
+                            <p class="text-sm text-gray-400">碩士班 | 機器學習研究</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-8 italic">學生個人網頁預留位置</p>
+                    <div class="w-full py-3 bg-white/10 text-gray-400 font-black rounded-xl text-center border border-white/10">
+                        建構中
+                    </div>
+                </div>
+
+                <!-- 預留位置 3 -->
+                <div class="bg-white/5 rounded-3xl p-8 border border-white/10 opacity-60">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 rounded-full bg-gray-600 flex items-center justify-center font-black text-white text-xl">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold">學術精英 B</h4>
+                            <p class="text-sm text-gray-400">博士班 | 韌性供應鏈研究</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-8 italic">學生個人網頁預留位置</p>
+                    <div class="w-full py-3 bg-white/10 text-gray-400 font-black rounded-xl text-center border border-white/10">
+                        建構中
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部聯絡資訊 -->
+    <footer class="bg-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12 mb-20">
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <div class="bg-iem-blue p-2 rounded-lg mr-3">
+                            <i data-lucide="graduation-cap" class="text-white w-6 h-6"></i>
+                        </div>
+                        <h2 class="font-black text-xl iem-blue tracking-tight">NPUST IEM</h2>
+                    </div>
+                    <p class="text-gray-500 leading-relaxed font-medium">
+                        91201 屏東縣內埔鄉學府路 1 號<br>
+                        管理學院二館 (工管系辦公室)
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-600 hover:text-white transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-red-600 hover:text-white transition"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-400 hover:text-white transition"><i data-lucide="globe" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-black iem-blue mb-8">系所服務</h4>
+                    <ul class="space-y-4 text-gray-600 font-medium">
+                        <li><a href="#" class="hover:text-iem-blue transition">碩專班專區</a></li>
+                        <li><a href="#" class="hover:text-iem-blue transition">系友會資訊</a></li>
+                        <li><a href="#" class="hover:text-iem-blue transition">下載專區</a></li>
+                        <li><a href="#" class="hover:text-iem-blue transition">常用表格下載</a></li>
+                        <li><a href="#" class="hover:text-iem-blue transition">實驗室介紹</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-black iem-blue mb-8">快捷連結</h4>
+                    <ul class="space-y-4 text-gray-600 font-medium">
+                        <li><a href="#" class="hover:text-iem-blue transition">屏科大學生系統</a></li>
+                        <li><a href="#" class="hover:text-iem-blue transition">校園教學入口</a></li>
+                        <li><a href="#" class="hover:text-iem-blue transition">圖書館查詢</a></li>
+                        <li><a href="#" class="hover:text-iem-blue transition">系上電子郵件</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-100 pt-10 text-center">
+                <p class="text-gray-400 text-sm font-medium">© 2024 國立屏東科技大學工業管理系 版權所有. 網頁維護：戴嘉樟</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 初始化圖標
+        window.onload = function() {
+            lucide.createIcons();
+        };
+    </script>
+</body>
+</html>
+
 [index.html個人網頁.txt](https://github.com/user-attachments/files/26238263/index.html.txt)
 <!DOCTYPE html>
 <html lang="zh-TW">
