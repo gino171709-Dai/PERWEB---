@@ -1,4 +1,3 @@
-[index.html個人網頁.txt](https://github.com/user-attachments/files/26238263/index.html.txt)
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
